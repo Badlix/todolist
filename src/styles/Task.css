@@ -1,0 +1,106 @@
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: gray;
+}
+
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-align: start;
+    border: #282c34;
+    position: relative;
+}
+
+.task-item label {
+    padding-left: 20px;
+}
+
+.bin-icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+}
+
+.date {
+    position: absolute;
+    opacity: 0.5;
+    right: 85px;
+    top: 15px;
+}
+
+.add-icon {
+    position: absolute;
+    top: 52px;
+    right: 735px;
+}
+
+.task-item:hover {
+    background-color: #444;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+}
+
+.task-input {
+    width: 380px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 4px 0 0 4px;
+    margin-right: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
